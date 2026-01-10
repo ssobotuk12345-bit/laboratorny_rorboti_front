@@ -1,0 +1,30 @@
+<div class="profile-card">
+  <h2>Картка профілю</h2>
+
+  <div class="profile-row">
+    <strong>ID:</strong> {{ user.id }}
+  </div>
+
+  <div class="profile-row">
+    <strong>Ім’я:</strong> {{ user.name }}
+  </div>
+
+  <div class="profile-row">
+    <strong>Статус:</strong> {{ user.status }}
+  </div>
+
+  <div class="profile-section">
+    <h3>Адреса</h3>
+    <p><strong>Місто:</strong> {{ user.address.city }}</p>
+    <p><strong>Вулиця:</strong> {{ user.address.street }}</p>
+  </div>
+
+  <div class="profile-section">
+    <h3>Хобі ({{ getHobbiesCount() }})</h3>
+    <ul>
+      <li *ngFor="let hobby of user.hobbies">
+        {{ hobby }}
+      </li>
+    </ul>
+  </div>
+</div>
