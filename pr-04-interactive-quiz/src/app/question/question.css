@@ -1,0 +1,36 @@
+.question-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.question-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.option {
+  list-style: none;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.option:hover {
+  background-color: #f2f2f2;
+}
+
+.option.selected {
+  background-color: #dbeafe;
+}
+
+.option.correct {
+  background-color: #c8f7c5;
+  border-color: #2ecc71;
+}

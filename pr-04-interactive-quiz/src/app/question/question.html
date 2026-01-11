@@ -1,0 +1,17 @@
+<div class="question-card">
+  <p class="question-text">{{ questionData.text }}</p>
+
+  <ul>
+    <li
+      *ngFor="let option of questionData.options; let i = index"
+      (click)="selectAnswer(i)"
+      class="option"
+      [ngClass]="{
+        'correct': showCorrect && i === questionData.correctIndex,
+        'selected': i === selectedIndex
+      }"
+    >
+      {{ option }}
+    </li>
+  </ul>
+</div>

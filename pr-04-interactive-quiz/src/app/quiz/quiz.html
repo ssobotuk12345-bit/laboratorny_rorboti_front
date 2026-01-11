@@ -1,0 +1,14 @@
+<h2>Інтерактивний опитувальник</h2>
+
+<app-question
+  [questionData]="question"
+  (answerSelected)="onAnswerSelected($event)">
+</app-question>
+
+<button class="show-btn" (click)="showCorrectAnswer()">
+  Показати відповідь
+</button>
+
+<p *ngIf="selectedAnswer !== null">
+  Ви обрали варіант № {{ selectedAnswer + 1 }}
+</p>

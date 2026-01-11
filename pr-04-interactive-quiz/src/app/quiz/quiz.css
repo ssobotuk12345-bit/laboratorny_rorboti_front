@@ -1,0 +1,15 @@
+.show-btn {
+  display: block;
+  margin: 15px auto;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.show-btn:hover {
+  background-color: #27ae60;
+}
